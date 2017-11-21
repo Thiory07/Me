@@ -16,32 +16,39 @@
 
     }
     #tio-ear-left {
+      position: absolute;
       height: 25%;
       left: 0;
-      position: absolute;
       top: 26.3%;
       width: 2.9%;
     }
     #tio-ear-right {
+      position: absolute;
         height: 25%;
         right: 0;
-        position: absolute;
         top: 26.3%;
         width: 2.9%;
     }
     #tio-head-outline{
+      position: absolute;
       height: 94.2%;
       left: 2.7%;
-      
-      position: absolute;
       top: 2.7%;
       width: 94.2%;
+    }
+    #tio-face{
+      position: absolute;
+      height: 80%;
+      left: 9.375%;
+      top: 9.375%;
+      width: 80%;
     }
     .skin-color{
       background-color: #ffdcc4;
     }
     .hair-color{
-      background-color: #7b4940;
+      /*background-color: #7b4940;*/
+      background-color: rgba(123, 73, 64, .8);
     }
   </style>
 </head>
@@ -50,7 +57,9 @@
     <div id="tio-head">
       <div id="tio-ear-left" class="skin-color"></div>
       <div id="tio-ear-right" class="skin-color"></div>
-      <div id="tio-head-outline" class="hair-color"></div>
+      <div id="tio-head-outline" class="hair-color">
+        <div id="tio-face" class="skin-color"></div>
+      </div>
     </div>
   </div>
 </body>

@@ -7,10 +7,10 @@
   <title>Tio</title>
   <style media="screen">
     #tio-head{
-      width: 32px;
-      height: 32px;
-      background-color: red;
-      background-image: url('tiori.jpeg');
+      width: 512px;
+      height: 512px;
+      background-color: transparent;
+      background-image: url('512.jpg');
       background-size: contain;
       position: relative;
 
@@ -19,40 +19,109 @@
       position: absolute;
       height: 25%;
       left: 0;
-      top: 26.3%;
-      width: 2.9%;
+      top: 25%;
+      width: 3.125%;
     }
     #tio-ear-right {
       position: absolute;
         height: 25%;
         right: 0;
-        top: 26.3%;
-        width: 2.9%;
+        top: 25%;
+        width: 3.125%;
     }
     #tio-head-outline{
       position: absolute;
-      height: 94.2%;
-      left: 2.7%;
-      top: 2.7%;
-      width: 94.2%;
+      height: 93.75%;
+      left: 3.125%;
+      top: 3.125%;
+      width: 93.75%;
     }
     #tio-face{
       position: absolute;
       height: 80%;
-      left: 9.375%;
-      top: 9.375%;
+      left: 10%;
+      top: 10%;
       width: 80%;
     }
+    #tio-glasses{
+      width: 100%;
+      top: 26.6666%;
+      height: 3.3333%;
+      background-color: black;
+    }
+    #tio-glasses::after{
+      content: "";
+      position: absolute;
+      width: 20%;
+      top: 100%;
+      height: 100%;
+      background-color: black;
+    }
+    #tio-glasses::before{
+      content: "";
+      position: absolute;
+      width: 20%;
+      top: 100%;
+      right: 0;
+      height: 100%;
+      background-color: black;
+    }
     .skin-color{
-      background-color: #ffdcc4;
+      /*background-color: #ffdcc4;*/
+      background-color: rgba(255, 220, 196, .8);
     }
     .hair-color{
       /*background-color: #7b4940;*/
       background-color: rgba(123, 73, 64, .8);
     }
+    .bg-black{
+      background-color: #000;
+    }
     .p-absolute{
       position: absolute;
     }
+    #tio-left-glass{
+      left: 16.667%;
+      top: 0;
+      height: 600%;
+      width: 26.666%;
+    }
+    #tio-right-glass{
+      right: 16.667%;
+      top: 0;
+      height: 600%;
+      width: 26.666%;
+    }
+    #tio-left-eye-white-area,
+    #tio-right-eye-white-area{
+      background-color: white;
+      height: 66.6667%;
+      width: 75%;
+      z-index: 2;
+      left: 12.5%;
+      top: 16.6667%;
+    }
+    .tio-eyeball{
+      width: 33.3333%;
+      height: 50%;
+    }
+    .tio-eyeball-position{
+      top: 25%;
+      left: 33.3333%;
+    }
+
+    .tio-eyebrow-dimensions{
+      width: 26.6667%;
+      height: 3.3333%;
+    }
+  #tio-left-eyebrow{
+    top:20%;
+    left:16.666%;
+  }
+  #tio-right-eyebrow{
+    top:20%;
+    right:16.666%;
+  }
   </style>
 </head>
 <body>
@@ -62,16 +131,27 @@
       <div id="tio-ear-right" class="skin-color"></div>
       <div id="tio-head-outline" class="hair-color">
         <div id="tio-face" class="skin-color">
-          <div id="tio-glasses" class="p-absolute" >
-            <div id="tio-left-glass">
 
-            </div>
-            <div id="tio-right-glass">
-
-            </div>
-
-          </div>
         </div>
+
+        <div id="tio-left-eyebrow" class="tio-eyebrow-dimensions bg-black p-absolute"></div>
+        <div id="tio-right-eyebrow" class="tio-eyebrow-dimensions bg-black p-absolute"></div>
+
+        <div id="tio-glasses" class="p-absolute" >
+          <div id="tio-left-glass" class="p-absolute bg-black" >
+            <div id="tio-left-eye-white-area" class="p-absolute" >
+              <div class="tio-eyeball tio-eyeball-position p-absolute bg-black" ></div>
+            </div>
+          </div>
+          <div id="tio-right-glass" class="p-absolute bg-black" >
+            <div id="tio-right-eye-white-area" class="p-absolute" >
+              <div class="tio-eyeball tio-eyeball-position p-absolute bg-black" ></div>
+            </div>
+          </div>
+
+        </div>
+        <div id="tio-left-eyebrow"><!--  Sobrancelhas --></div>
+        <div id="tio-right-eyebrow"><!--  Sobrancelhas --></div>
       </div>
     </div>
   </div>

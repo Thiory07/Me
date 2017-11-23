@@ -68,7 +68,7 @@
     }
     .skin-color{
       /*background-color: #ffdcc4;*/
-      background-color: rgba(255, 220, 196, .8);
+      background-color: rgba(255, 220, 196, .7);
     }
     .hair-color{
       /*background-color: #7b4940;*/
@@ -122,6 +122,20 @@
     top:20%;
     right:16.666%;
   }
+  #tio-nose{
+    left: 46.6667%;
+    top: 36.6667%;
+  }
+  .tio-nose-dimensions{
+    height: 33.3333%;
+    width: 10%;
+  }
+  #tio-nose-skin{
+    height: 88.8889%;
+    width: 66.6667%;
+    left: -1.074219%;/*Bug fix*/
+    top: 0;
+  }
   </style>
 </head>
 <body>
@@ -145,13 +159,21 @@
           </div>
           <div id="tio-right-glass" class="p-absolute bg-black" >
             <div id="tio-right-eye-white-area" class="p-absolute" >
-              <div class="tio-eyeball tio-eyeball-position p-absolute bg-black" ></div>
+              <div class="tio-eyeball tio-eyeball-position p-absolute bg-black " ></div>
             </div>
           </div>
 
         </div>
         <div id="tio-left-eyebrow"><!--  Sobrancelhas --></div>
         <div id="tio-right-eyebrow"><!--  Sobrancelhas --></div>
+
+        <div id="tio-nose" class="tio-nose-dimensions bg-black p-absolute">
+          <div id="tio-nose-skin" class="skin-color p-absolute"></div>
+        </div>
+
+        <div id="tio-moustache"></div>
+        <div id="tio-mouth"></div>
+        <div id="tio-goathee"></div>
       </div>
     </div>
   </div>

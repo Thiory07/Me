@@ -8,12 +8,15 @@
   <style media="screen">
 /* Default things */
   .skin-color{
-    /*background-color: #ffdcc4;*/
-    background-color: rgba(255, 220, 196, .7);
+    background-color: #ffdcc4;
+    /*background-color: rgba(255, 220, 196, .7);*/
   }
   .hair-color{
-    /*background-color: #7b4940;*/
-    background-color: rgba(123, 73, 64, .8);
+    background-color: #7b4940;
+    /*background-color: rgba(123, 73, 64, .8);*/
+  }
+  .hair-darker-color{
+    background-color: #76443b;
   }
   .bg-black{
     background-color: #000;
@@ -21,11 +24,16 @@
   .p-absolute{
     position: absolute;
   }
+  .tio-moustache-dimensions::after,
+  .tio-moustache-dimensions::before{
+    background-color: #7b4940;
+    /*background-color: rgba(123, 73, 64, .8);*/
+  }
 /* /default layout */
 /* Stuff dimensions */
 .tio-head-dimensions{
-  width: 512px;
-  height: 512px;
+  width: 256px;
+  height: 256px;
 }
 .tio-ear-dimensions{
   width: 3.125%;
@@ -68,12 +76,52 @@
   height: 80%;
   width: 80%;
 }
-.tio-nose-skin{
+.tio-nose-skin-dimensions{
   height: 88.8889%;
   width: 66.6667%;
 }
+.tio-moustache-dimensions{
+  width: 46.6667%;
+  height: 6.6667%;
+}
+.tio-moustache-dimensions::after,
+.tio-moustache-dimensions::before{
+  content: "";
+  width: 21.4285714%;
+  height: 200%;
+}
+.tio-mouth-dimensions{
+  height: 3.33333333%;
+  width: 20%;
+}
+.tio-goathee-dimensions {
+  width: 6.666666667%;
+  height: 13.33333333%;
+}
 /* /Stuff dimensions */
 
+/* Stuff Position */
+.tio-moustache-position{
+  top: 70%;
+  left: 26.6667%;
+}
+.tio-moustache-dimensions::after,
+.tio-moustache-dimensions::before{
+  position: absolute;
+  top: 100%;
+}
+.tio-moustache-dimensions::after{
+  right: 0;
+}
+.tio-mouth-position{
+  top: 80%;
+  left: 40%;
+}
+.tio-goathee-position{
+  left: 46.666666667%;
+  top:  86.666666667%;
+}
+/* /Stuff Position */
 
 
 
@@ -81,7 +129,7 @@
   /*Head*/
     #tio-head{
       background-color: transparent;
-      background-image: url('512.jpg');
+      /*background-image: url('512.jpg');*/
       background-size: contain;
       position: relative;
     }
@@ -157,8 +205,11 @@
     top: 36.6667%;
   }
   #tio-nose-skin{
-    left: -1.074219%;/*Bug fix*/
-    top: 0;
+    /*left: -1.074219%;
+    top: 0;*/
+
+    left: -3%;
+    top: -1%;
   }
 
   </style>
@@ -192,13 +243,13 @@
         <div id="tio-left-eyebrow"><!--  Eyebrow --></div>
         <div id="tio-right-eyebrow"><!--  Eyebrow --></div>
 
-        <div id="tio-nose" class="tio-nose-dimensions bg-black p-absolute">
-          <div id="tio-nose-skin" class="skin-color p-absolute tio-nose-skin-dimensions"></div>
+        <div id="tio-nose" class="p-absolute tio-nose-dimensions bg-black ">
+          <div id="tio-nose-skin" class="p-absolute skin-color  tio-nose-skin-dimensions"></div>
         </div>
 
-        <div id="tio-moustache" class="tio-moustache-size"></div>
-        <div id="tio-mouth"></div>
-        <div id="tio-goathee"></div>
+        <div id="tio-moustache" class="p-absolute hair-color tio-moustache-dimensions tio-moustache-position "></div>
+        <div id="tio-mouth"    class="p-absolute tio-mouth-dimensions tio-mouth-position bg-black"></div>
+        <div id="tio-goathee"  class="p-absolute tio-goathee-dimensions tio-goathee-position hair-darker-color"></div>
       </div>
     </div>
   </div>

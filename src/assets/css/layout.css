@@ -1,0 +1,32 @@
+/* Default things */
+  .skin-color{
+    background-color: #ffdcc4;
+    /*background-color: rgba(255, 220, 196, .7);*/
+  }
+  .hair-color{
+    background-color: #7b4940;
+    /*background-color: rgba(123, 73, 64, .8);*/
+  }
+  .hair-darker-color{
+    background-color: #76443b;
+  }
+  .bg-black{
+    background-color: #000;
+  }
+  .p-absolute{
+    position: absolute;
+  }
+  .tio-moustache-dimensions::after,
+  .tio-moustache-dimensions::before{
+    background-color: #7b4940;
+    /*background-color: rgba(123, 73, 64, .8);*/
+  }
+/* /default layout */
+/*Head*/
+  #tio-head{
+    background-color: transparent;
+    /*background-image: url('src/assets/img/512.jpg');*/
+    background-size: contain;
+    position: relative;
+  }
+/*/Head*/

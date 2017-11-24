@@ -5,158 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Tio</title>
+  <link rel="stylesheet" href="src/assets/css/layout.css">
+  <link rel="stylesheet" href="src/assets/css/dimensions.css">
+  <link rel="stylesheet" href="src/assets/css/positions.css">
+  <link rel="stylesheet" href="src/assets/css/animations.css">
   <style media="screen">
-/* Default things */
-  .skin-color{
-    background-color: #ffdcc4;
-    /*background-color: rgba(255, 220, 196, .7);*/
-  }
-  .hair-color{
-    background-color: #7b4940;
-    /*background-color: rgba(123, 73, 64, .8);*/
-  }
-  .hair-darker-color{
-    background-color: #76443b;
-  }
-  .bg-black{
-    background-color: #000;
-  }
-  .p-absolute{
-    position: absolute;
-  }
-  .tio-moustache-dimensions::after,
-  .tio-moustache-dimensions::before{
-    background-color: #7b4940;
-    /*background-color: rgba(123, 73, 64, .8);*/
-  }
-/* /default layout */
-/* Stuff dimensions */
-.tio-head-dimensions{
-  width: 256px;
-  height: 256px;
-}
-.tio-ear-dimensions{
-  width: 3.125%;
-  height: 25%;
-}
-.tio-glasses-glass-dimensions{
-  height: 600%;
-  width: 26.666%;
-}
-.tio-eyeball-dimensions{
-  width: 33.3333%;
-  height: 50%;
-}
-.tio-eyebrow-dimensions{
-  width: 26.6667%;
-  height: 3.3333%;
-}
-.tio-nose-dimensions{
-  height: 33.3333%;
-  width: 10%;
-}
-.tio-glasses-frame-dimensions{
-  height: 3.3333%;
-  width: 100%;
-}
-.tio-glasses-frame-dimensions::after,
-.tio-glasses-frame-dimensions::before{
-  height: 100%;
-  width: 20%;
-}
-.tio-head-outline-dimensions{
-  height: 93.75%;
-  width: 93.75%;
-}
-.tio-left-eye-white-area-dimensions{
-  height: 66.6667%;
-  width: 75%;
-}
-.tio-face-dimensions{
-  height: 80%;
-  width: 80%;
-}
-.tio-nose-skin-dimensions{
-  height: 88.8889%;
-  width: 66.6667%;
-}
-.tio-moustache-dimensions{
-  width: 46.6667%;
-  height: 6.6667%;
-}
-.tio-moustache-dimensions::after,
-.tio-moustache-dimensions::before{
-  content: "";
-  width: 21.4285714%;
-  height: 200%;
-}
-.tio-mouth-dimensions{
-  height: 3.33333333%;
-  width: 20%;
-}
-.tio-goathee-dimensions {
-  width: 6.666666667%;
-  height: 13.33333333%;
-}
-/* /Stuff dimensions */
-
-/* Stuff Position */
-.tio-moustache-position{
-  top: 70%;
-  left: 26.6667%;
-}
-.tio-moustache-dimensions::after,
-.tio-moustache-dimensions::before{
-  position: absolute;
-  top: 100%;
-}
-.tio-moustache-dimensions::after{
-  right: 0;
-}
-.tio-mouth-position{
-  top: 80%;
-  left: 40%;
-}
-.tio-goathee-position{
-  left: 46.666666667%;
-  top:  86.666666667%;
-}
-/* /Stuff Position */
-
-
-
-
-  /*Head*/
-    #tio-head{
-      background-color: transparent;
-      /*background-image: url('512.jpg');*/
-      background-size: contain;
-      position: relative;
-    }
-  /*/Head*/
-
-  /*Ears*/
-    #tio-ear-left {
-      left: 0;
-      top: 25%;
-    }
-    #tio-ear-right {
-      right: 0;
-      top: 25%;
-    }
-  /*/Ears*/
-    #tio-head-outline{
-      left: 3.125%;
-      top: 3.125%;
-    }
-    #tio-face{
-      left: 10%;
-      top: 10%;
-    }
-    #tio-glasses{
-      background-color: #000;
-      top: 26.6666%;
-    }
     #tio-glasses::after{
       background-color: #000;
       content: "";
@@ -170,15 +23,6 @@
       right: 0;
       top: 100%;
     }
-    /* Glasses glass */
-    #tio-left-glass{
-      left: 16.667%;
-      top: 0;
-    }
-    #tio-right-glass{
-      right: 16.667%;
-      top: 0;
-    }
     /* /Glasses glass */
     #tio-left-eye-white-area,
     #tio-right-eye-white-area{
@@ -187,45 +31,6 @@
       top: 16.6667%;
       z-index: 2;
     }
-    .tio-eyeball-position{
-      top: 25%;
-      left: 33.3333%;
-    }
-
-  #tio-left-eyebrow{
-    top:20%;
-    left:16.666%;
-  }
-  #tio-right-eyebrow{
-    top:20%;
-    right:16.666%;
-  }
-  #tio-nose{
-    left: 46.6667%;
-    top: 36.6667%;
-  }
-  #tio-nose-skin{
-    /*left: -1.074219%;
-    top: 0;*/
-
-    left: -3%;
-    top: -1%;
-  }
-
-
-
-  .animate-blink{
-
-    animation-name: blink;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
-    -webkit-transition-timing-function: linear; /* Safari and Chrome */
-    transition-timing-function: linear;
-  }
-  @keyframes blink {
-    0%,4% {transform: scaleY(1);}
-    1% {transform: scaleY(.1);}
-  }
   </style>
 </head>
 <body>
@@ -241,7 +46,7 @@
         <div id="tio-left-eyebrow" class="tio-eyebrow-dimensions bg-black p-absolute"></div>
         <div id="tio-right-eyebrow" class="tio-eyebrow-dimensions bg-black p-absolute"></div>
 
-        <div id="tio-glasses" class="p-absolute tio-glasses-frame-dimensions" >
+        <div id="tio-glasses" class="p-absolute tio-glasses-frame-dimensions bg-black" >
           <div id="tio-left-glass" class="p-absolute bg-black tio-glasses-glass-dimensions" >
             <div id="tio-left-eye-white-area" class="p-absolute tio-left-eye-white-area-dimensions" >
               <div class="tio-eyeball-dimensions tio-eyeball-position p-absolute bg-black animate-blink" ></div>

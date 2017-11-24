@@ -1,0 +1,11 @@
+.animate-blink{
+  animation-name: blink;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  -webkit-transition-timing-function: linear; /* Safari and Chrome */
+  transition-timing-function: linear;
+}
+@keyframes blink {
+  0%,4% {transform: scaleY(1);}
+  1% {transform: scaleY(.1);}
+}

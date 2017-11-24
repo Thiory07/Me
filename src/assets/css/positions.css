@@ -1,0 +1,77 @@
+
+/* Stuff Position */
+.tio-moustache-position{
+  top: 70%;
+  left: 26.6667%;
+}
+.tio-moustache-dimensions::after,
+.tio-moustache-dimensions::before{
+  position: absolute;
+  top: 100%;
+}
+.tio-moustache-dimensions::after{
+  right: 0;
+}
+.tio-mouth-position{
+  top: 80%;
+  left: 40%;
+}
+.tio-goathee-position{
+  left: 46.666666667%;
+  top:  86.666666667%;
+}
+/* /Stuff Position */
+/*Ears*/
+  #tio-ear-left {
+    left: 0;
+    top: 25%;
+  }
+  #tio-ear-right {
+    right: 0;
+    top: 25%;
+  }
+/*/Ears*/
+  #tio-head-outline{
+    left: 3.125%;
+    top: 3.125%;
+  }
+  #tio-face{
+    left: 10%;
+    top: 10%;
+  }
+  #tio-glasses{
+    top: 26.6666%;
+  }
+
+
+  .tio-eyeball-position{
+    top: 25%;
+    left: 33.3333%;
+  }
+
+#tio-left-eyebrow{
+  top:20%;
+  left:16.666%;
+}
+#tio-right-eyebrow{
+  top:20%;
+  right:16.666%;
+}
+#tio-nose{
+  left: 46.6667%;
+  top: 36.6667%;
+}
+#tio-nose-skin{
+  left: -3%;
+  top: -1%;
+}
+
+/* Glasses glass */
+#tio-left-glass{
+  left: 16.667%;
+  top: 0;
+}
+#tio-right-glass{
+  right: 16.667%;
+  top: 0;
+}
